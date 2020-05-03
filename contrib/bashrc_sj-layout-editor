@@ -1,0 +1,14 @@
+# For best results, add the following lines to ~/.bashrc:
+# if [ -f /path/to/sj-layout-editor/contrib/bashrc_sj-layout-editor ]; then
+#     . /path/to/sj-layout-editor/contrib/bashrc_sj-layout-editor
+# fi
+
+# Determine the number of available processors on the system for parallel make
+# invocation.
+PROCESSORS=$(/usr/bin/getconf _NPROCESSORS_ONLN)
+
+# Build (or finish building) all objects using all available processors.
+chmake()
+{
+    make -j$PROCESSORS "$@"
+}
