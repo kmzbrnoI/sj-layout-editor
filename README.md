@@ -12,6 +12,7 @@ If you want to be in touch with the community, please connect to [discord](https
     sudo dnf install qt5 qt5-devel
     sudo dnf install qt-creator qt5-designer qt5-linguist
     sudo dnf install mingw64-qt5-qmake mingw32-qt5-qmake qconf
+    sudo dnf install libglvnd-opengl
     sudo dnf install clang clang-tools-extra git-clang-format clang-analyzer
 
 ### Set up local git repository

@@ -17,13 +17,17 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     src/main.cc \
-    src/main_window.cc
+    src/main_window.cc \
+    src/canvas.cc
 
 HEADERS += \
-    src/main_window.h
+    src/main_window.h \
+    src/canvas.h
 
 FORMS += \
     ui/main_window.ui
+
+INCLUDEPATH += $$PWD/src
 
 DESTDIR = build
 OBJECTS_DIR = generated_files
